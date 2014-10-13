@@ -384,7 +384,7 @@
 
 
 # #16 10/6/2014	Towers of Hanoi
-a = [1,2,3,4,5,6,7,8,9,10]
+# a = [1,2,3,4,5,6,7,8,9,10]
 # def moveHanoi(disks, start, middle, finish)
 #   if n==1
 #     # move from start to finish
@@ -402,7 +402,7 @@ a = [1,2,3,4,5,6,7,8,9,10]
 # end
 
 
-move the remaining disks from a to c
+# move the remaining disks from a to c
 
 
 # #-----------------------------------------------------------------------
@@ -411,33 +411,101 @@ move the remaining disks from a to c
 # #17 10/6/2014	Binary Search
 
 
-def binary_search(array, value)
-		start = 0
-		finish = array.length - 1
- 		while start < finish
-    	mid = start + (finish - start)/2
-   	 	puts start
-   	 	puts mid
-   	 	puts finish
-   	 	puts "----"
-    	if array[mid] > value
-    		finish = mid - 1
-   		elsif array[mid] == value
-   			return true
-   		else
-    		start = mid + 1
-   	 	end
-   	end
-   	return array[start] == value
-end
+# def binary_search(array, value)
+# 		start = 0
+# 		finish = array.length - 1
+#  		while start < finish
+#     	mid = start + (finish - start)/2
+#    	 	puts start
+#    	 	puts mid
+#    	 	puts finish
+#    	 	puts "----"
+#     	if array[mid] > value
+#     		finish = mid - 1
+#    		elsif array[mid] == value
+#    			return true
+#    		else
+#     		start = mid + 1
+#    	 	end
+#    	end
+#    	return array[start] == value
+# end
 
-array = [2,4,6,8,10,14,15]
-puts binary_search(array, 12)
-
-
+# array = [2,4,6,8,10,14,15]
+# puts binary_search(array, 12)
 
 
+# #-----------------------------------------------------------------------
 
+
+# #18 10/9/2014 largest consecutive sum
+
+# a = [1,7,-2,-8,-3,10]
+
+# def largestsum(array)
+#   max_sum = 0
+#   max_x = 0
+#   max_y = 0
+
+#   for x in 0..array.length
+#     for y in x+1..array.length
+#       # current_sum = sum of x+y
+#       if current_sum > max_sum
+                   
+#         array.inject(:+)
+
+# end
+
+
+# def max_sub_array(arry)
+#     max_sum = arry.inject { |sum, n| sum += n }
+#     min_length = arry.size
+#     result = arry
+#     (1...arry.size).each do |i|
+#        (i...arry.size).each do |j|
+#           sub = arry[i..j]
+#           sum = sub.inject { |sum, n| sum += n }
+#           next if sum < max_sum
+#           next if sum == max_sum && sub.size >= min_length
+#           max_sum, min_length, result = sum, sub.size, sub
+#        end
+#     end
+#     result
+# end
+
+
+# // -----------------------------------------------------------------------
+
+
+# // #19 10/13/2014 Circular Prime Number
+
+# var primeNumber = function(number){
+#   for (var y=0; y<=100; y++) {
+#     var notPrime = false;
+#     for (var x = 2; x<=y; x++) {
+#       if (y%x === 0 && y !== x) {
+#         notPrime = true;
+#       }
+#     }
+#     if (notPrime === false) {
+#       return x;
+#     }
+#   }
+# };
+
+# // divide number up into individual digits
+# // check each digit with prime function
+# // if each digit is prime, then circular prime
+# // else not circular prime
+
+# var eachDigit = function(number) {
+#     output = [],
+#     sNumber = number.toString();
+#   for (var i = 0, len = sNumber.length; i < len; i += 1) {
+#     output.push(+sNumber.charAt(i));
+
+#   }
+# }
 
 
 
