@@ -498,14 +498,21 @@
 # // if each digit is prime, then circular prime
 # // else not circular prime
 
+# to optimize
+# only look for numbers with digits that are already prime
+
 # var eachDigit = function(number) {
 #     output = [],
 #     sNumber = number.toString();
-#   for (var i = 0, len = sNumber.length; i < len; i += 1) {
-#     output.push(+sNumber.charAt(i));
+#   for (var i = 0, i < sNumber.length; i += 1) {
+#     output.push(sNumber.charAt(i));
 
-#   }
+
 # }
+
+# var circlePrimeCheck = function(eachDigit)
+
+
 
 
 
