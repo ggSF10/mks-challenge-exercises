@@ -513,6 +513,30 @@
 # var circlePrimeCheck = function(eachDigit)
 
 
+# #-----------------------------------------------------------------------
+
+
+# #20 10/20/2014 Game of Rotation
+# n = 3
+# array = [20,30,10]
+
+# def rotation(n, array)
+# 	i = 0
+# 	while i < n do
+# 		x = n-1
+# 		array[0] * n-x
+
+		
+
+# 	# input number of times to multiply
+# 	# multiply the first number in array by 1, second number by 2, etc...
+# 	# 
+# end
+
+
+
+
+
 
 
 
