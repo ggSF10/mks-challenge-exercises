@@ -517,6 +517,7 @@
 
 
 # #20 10/20/2014 Game of Rotation
+
 # n = 3
 # array = [20,30,10]
 
@@ -531,6 +532,24 @@
 # 	# input number of times to multiply
 # 	# multiply the first number in array by 1, second number by 2, etc...
 # 	# 
+# end
+
+
+# #-----------------------------------------------------------------------
+
+
+# #21 10/21/2014 Game of Rotation
+
+# def palindrome(string)
+
+# 	pseudocode
+
+# 	split string into an array
+# 	call .permutation to get all possible array combinations
+# 	call .unique to get all unique solutions
+# 	loop through arrays, if first half of array = second half of array push into another array
+# 	each time pushed into new array increment counter
+
 # end
 
 
