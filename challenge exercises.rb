@@ -552,9 +552,61 @@
 
 # end
 
+# class Fib
+# 	@@solutions = {}
+	
+# 	def self.smart_fib(n)
+# 	if @@solutions[n]
+# 		return @@solutions[n]
+# 	elsif n<= 2
+# 		@@solutions[n]
+# memoization
 
 
+#-----------------------------------------------------------------------
 
+
+#22 11/11/2014 Graphs
+
+class Graph
+
+	def initialize
+    @graph = {}
+  end
+
+  def addNode(value)
+ 		@graph[value] = Node.new(value)
+  end
+
+  def removeNode(value)
+  	@graph.delete(value)
+  end
+
+  def addEdge(node_value_1, node_value_2, cost)
+  	
+  end
+
+  def removeEdge(node_value_1, node_value_2)
+
+  end
+
+  # More methods here
+
+end
+
+class Node
+  attr_accessor :edges, :value
+  def initialize(value)
+    @value = value
+    @edges = {} # hash to map connected Nodes to the associated cost
+  end
+
+  def addEdge(node, cost)
+
+  end
+
+  # More methods here
+end
 
 
 
